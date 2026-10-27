@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secure Registration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="secure-theme">
+    <main class="auth-shell">
+      <section class="auth-card">
+        <p class="eyebrow">Secure track</p>
+        <h1>Register</h1>
+        <p class="notice secure">Passwords are validated and stored as salted bcrypt hashes.</p>
+        <form method="post" action="/secure/register" class="stack">
+          <label>Username<input name="username" pattern="[A-Za-z0-9]{3,24}" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Password<input name="password" type="password" minlength="8" required></label>
+          <button class="button secure full" type="submit">Create secure account</button>
+        </form>
+        <p><a href="/secure/login">Back to secure login</a></p>
+      </section>
+    </main>
+  </body>
+</html>

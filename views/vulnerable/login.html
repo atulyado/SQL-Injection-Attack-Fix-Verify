@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vulnerable Login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="vulnerable-theme">
+    <main class="auth-shell">
+      <section class="auth-card">
+        <p class="eyebrow">Vulnerable track</p>
+        <h1>Login</h1>
+        <p class="notice danger">Try <code>' OR '1'='1</code> in both login fields to bypass authentication.</p>
+        <form method="post" action="/vulnerable/login" class="stack">
+          <label>Username<input name="username" autocomplete="username" required></label>
+          <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+          <button class="button danger full" type="submit">Sign in</button>
+        </form>
+        <p class="muted">Demo account: <strong>admin</strong> / <strong>admin123</strong></p>
+        <p><a href="/vulnerable/register">Create vulnerable account</a> or <a href="/secure/login">compare secure login</a></p>
+      </section>
+    </main>
+    <script src="/js/flash.js"></script>
+  </body>
+</html>

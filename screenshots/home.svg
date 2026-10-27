@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Home page example</title>
+  <desc id="desc">Illustrative screenshot of the lab home page showing vulnerable and secure entry points.</desc>
+  <rect width="1280" height="760" fill="#f7f9fc"/>
+  <rect x="88" y="110" width="1104" height="540" rx="8" fill="#fff" stroke="#d9e1ec"/>
+  <text x="130" y="178" fill="#607084" font-family="Arial, sans-serif" font-size="20" font-weight="700">ETHICAL CYBERSECURITY TRAINING LAB</text>
+  <text x="130" y="265" fill="#18202f" font-family="Arial, sans-serif" font-size="62" font-weight="700">Vulnerable Web</text>
+  <text x="130" y="337" fill="#18202f" font-family="Arial, sans-serif" font-size="62" font-weight="700">Application Lab</text>
+  <rect x="130" y="400" width="220" height="52" rx="6" fill="#c93a4a"/>
+  <text x="164" y="435" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="700">Vulnerable lab</text>
+  <rect x="372" y="400" width="190" height="52" rx="6" fill="#0f766e"/>
+  <text x="408" y="435" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="700">Secure lab</text>
+  <rect x="130" y="505" width="475" height="90" rx="8" fill="#fff0f1" stroke="#f1b6bf"/>
+  <text x="158" y="556" fill="#8f1f2d" font-family="Arial, sans-serif" font-size="22" font-weight="700">' OR '1'='1</text>
+  <rect x="675" y="505" width="430" height="90" rx="8" fill="#e8f7f4" stroke="#a8dad4"/>
+  <text x="703" y="556" fill="#115e59" font-family="Arial, sans-serif" font-size="22" font-weight="700">WHERE username = ?</text>
+</svg>

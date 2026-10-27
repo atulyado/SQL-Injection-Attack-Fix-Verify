@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Vulnerable Web Application Lab mark</title>
+  <desc id="desc">A shield split between vulnerable and secure web application examples.</desc>
+  <rect width="640" height="360" fill="#f7f9fc"/>
+  <path d="M320 48 458 92v102c0 82-58 130-138 150-80-20-138-68-138-150V92l138-44Z" fill="#fff" stroke="#d9e1ec" stroke-width="8"/>
+  <path d="M320 62v265c-68-20-116-62-116-133V108l116-46Z" fill="#fff0f1"/>
+  <path d="M320 62v265c68-20 116-62 116-133V108L320 62Z" fill="#e8f7f4"/>
+  <text x="238" y="182" fill="#8f1f2d" font-family="Arial, sans-serif" font-size="46" font-weight="700">SQL</text>
+  <text x="344" y="182" fill="#115e59" font-family="Arial, sans-serif" font-size="46" font-weight="700">?</text>
+  <text x="203" y="238" fill="#8f1f2d" font-family="Arial, sans-serif" font-size="24" font-weight="700">vulnerable</text>
+  <text x="339" y="238" fill="#115e59" font-family="Arial, sans-serif" font-size="24" font-weight="700">secure</text>
+</svg>

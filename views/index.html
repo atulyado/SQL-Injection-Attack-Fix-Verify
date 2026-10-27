@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SQL Injection: Attack, Fix, Verify</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <main class="home-shell">
+      <section class="hero">
+        <p class="eyebrow">Local cybersecurity case study</p>
+        <h1>SQL Injection: Attack, Fix, Verify</h1>
+        <p class="hero-copy">
+          Compare a vulnerable login query with a parameterized query, then run automated tests to verify the fix.
+        </p>
+        <div class="hero-actions">
+          <a class="button danger" href="/vulnerable/login">Open vulnerable lab</a>
+          <a class="button secure" href="/secure/login">Open secure lab</a>
+        </div>
+      </section>
+
+      <section class="comparison-grid" aria-label="Lab comparison">
+        <article>
+          <h2>Vulnerable track</h2>
+          <p>Demonstrates SQL Injection, stored XSS, plain-text passwords, and weak session handling.</p>
+          <code>' OR '1'='1</code>
+          <code>&lt;script&gt;alert("XSS")&lt;/script&gt;</code>
+        </article>
+        <article>
+          <h2>Secure track</h2>
+          <p>Uses parameterized queries, bcrypt hashing, validation, output encoding, rate limiting, and safer sessions.</p>
+          <code>WHERE username = ?</code>
+          <code>bcrypt.hash(password, 12)</code>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

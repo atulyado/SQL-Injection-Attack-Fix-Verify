@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vulnerable Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="vulnerable-theme">
+    <header class="topbar">
+      <a href="/" class="brand">Vulnerable Web Application Lab</a>
+      <form method="post" action="/vulnerable/logout"><button class="ghost-button" type="submit">Log out</button></form>
+    </header>
+    <main class="dashboard">
+      <section class="panel intro-panel danger-panel">
+        <p class="eyebrow">Vulnerable dashboard</p>
+        <h1 id="welcome">Loading...</h1>
+        <p>This side intentionally renders comments unsafely and uses weak authentication patterns for learning.</p>
+      </section>
+
+      <section class="two-column">
+        <article class="panel">
+          <h2>Message board</h2>
+          <form method="post" action="/vulnerable/comments" class="stack">
+            <label>Message<textarea name="message" rows="4" required placeholder='<script>alert("XSS")</script>'></textarea></label>
+            <button class="button danger" type="submit">Post unsafe message</button>
+          </form>
+          <div id="comments" class="comment-list"></div>
+        </article>
+
+        <article class="panel">
+          <h2>Recent login attempts</h2>
+          <div id="attempts" class="attempt-list"></div>
+          <h2>What is exposed?</h2>
+          <pre id="profile" class="code-block"></pre>
+        </article>
+      </section>
+    </main>
+    <script src="/js/dashboard.js" data-lab="vulnerable"></script>
+  </body>
+</html>

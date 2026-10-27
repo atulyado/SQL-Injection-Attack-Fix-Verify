@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vulnerable Registration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="vulnerable-theme">
+    <main class="auth-shell">
+      <section class="auth-card">
+        <p class="eyebrow">Vulnerable track</p>
+        <h1>Register</h1>
+        <p class="notice danger">This version stores your password as plain text.</p>
+        <form method="post" action="/vulnerable/register" class="stack">
+          <label>Username<input name="username" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Password<input name="password" type="password" required></label>
+          <button class="button danger full" type="submit">Create account</button>
+        </form>
+        <p><a href="/vulnerable/login">Back to vulnerable login</a></p>
+      </section>
+    </main>
+  </body>
+</html>

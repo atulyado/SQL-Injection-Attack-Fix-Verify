@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secure Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="secure-theme">
+    <header class="topbar">
+      <a href="/" class="brand">Vulnerable Web Application Lab</a>
+      <form method="post" action="/secure/logout"><button class="ghost-button" type="submit">Log out</button></form>
+    </header>
+    <main class="dashboard">
+      <section class="panel intro-panel secure-panel">
+        <p class="eyebrow">Secure dashboard</p>
+        <h1 id="welcome">Loading...</h1>
+        <p>This side uses parameterized queries, password hashing, safer sessions, validation, and encoded output.</p>
+      </section>
+
+      <section class="two-column">
+        <article class="panel">
+          <h2>Message board</h2>
+          <form method="post" action="/secure/comments" class="stack">
+            <label>Message<textarea name="message" rows="4" maxlength="500" required placeholder='<script>alert("XSS")</script>'></textarea></label>
+            <button class="button secure" type="submit">Post safe message</button>
+          </form>
+          <div id="comments" class="comment-list"></div>
+        </article>
+
+        <article class="panel">
+          <h2>Recent login attempts</h2>
+          <div id="attempts" class="attempt-list"></div>
+          <h2>Session profile</h2>
+          <pre id="profile" class="code-block"></pre>
+        </article>
+      </section>
+    </main>
+    <script src="/js/dashboard.js" data-lab="secure"></script>
+  </body>
+</html>
