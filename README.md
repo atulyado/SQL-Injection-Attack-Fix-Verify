@@ -44,5 +44,6 @@ Seeded lab credentials for checking a normal login: vulnerable `admin` / `admin1
 - [`routes/secureRoutes.js`](routes/secureRoutes.js): parameterized lookup and password hash verification.
 - [`test/sql-injection.test.js`](test/sql-injection.test.js): end to end HTTP regression tests.
 - [`FINDINGS.md`](FINDINGS.md): concise security case study and limitations.
+- [`TEST_EVIDENCE.md`](TEST_EVIDENCE.md): locally verified HTTP results and the remaining Burp evidence gap.
 
 The original lab also contains XSS, password storage, and session handling examples. This portfolio version focuses its explanation and tests on **SQL injection in login**.
